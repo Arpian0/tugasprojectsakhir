@@ -13,6 +13,10 @@
                         <div class="alert alert-success">
                             You are logged in!
                         </div>
+                        <form action="{{ route('logout') }}" method="post">
+                            @csrf
+                            <button class="btn btn-danger">Logout</button>
+                        </form>
                     @endif
                 </div>
             </div>
